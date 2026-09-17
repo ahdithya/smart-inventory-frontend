@@ -3,7 +3,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
-import { HomePlaceholder } from './pages/HomePlaceholder';
+import { DashboardPage } from './pages/DashboardPage';
 
 export function App() {
   return (
@@ -19,7 +19,15 @@ export function App() {
             path="/"
             element={
               <ProtectedRoute>
-                <HomePlaceholder />
+                <DashboardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <DashboardPage />
               </ProtectedRoute>
             }
           />
