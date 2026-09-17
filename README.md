@@ -10,8 +10,8 @@ frontend/
 └── src/
     ├── main.jsx          # entry point
     ├── App.jsx           # root + router
-    ├── components/       # komponen UI (tabel, form, chart, sidebar)
-    ├── hooks/            # hooks custom (mis. useAuth)
+    ├── components/       # komponen UI
+    ├── hooks/            # hooks custom
     └── services/         # modul Fetch API per resource
         ├── auth.js
         ├── products.js
@@ -38,17 +38,17 @@ Base URL API diambil dari `import.meta.env.VITE_API_BASE_URL` (default `http://l
 
 ## Halaman
 
-| Route | Halaman | Akses |
-|---|---|---|
-| `/login` | Login | Publik |
-| `/register` | Register (user pertama → Owner) | Publik |
-| `/` | Dashboard (KPI, tren, stok kritis, ringkasan forecast) | Login |
-| `/products` | Produk (CRUD) | Login (tulis: Owner) |
-| `/categories` | Kategori (CRUD) | Login (tulis: Owner) |
-| `/sales` | Penjualan (form multi-item + riwayat) | Login |
-| `/stock` | Stok (list + form stok masuk) | Login |
-| `/forecast` | Forecast & rekomendasi restock | Login |
-| `/settings` | Kelola user (buat staff/admin, ubah role) | Owner |
+| Route         | Halaman                                                | Akses                |
+| ------------- | ------------------------------------------------------ | -------------------- |
+| `/login`      | Login                                                  | Publik               |
+| `/register`   | Register (user pertama → Owner)                        | Publik               |
+| `/`           | Dashboard (KPI, tren, stok kritis, ringkasan forecast) | Login                |
+| `/products`   | Produk (CRUD)                                          | Login (tulis: Owner) |
+| `/categories` | Kategori (CRUD)                                        | Login (tulis: Owner) |
+| `/sales`      | Penjualan (form multi-item + riwayat)                  | Login                |
+| `/stock`      | Stok (list + form stok masuk)                          | Login                |
+| `/forecast`   | Forecast & rekomendasi restock                         | Login                |
+| `/settings`   | Kelola user (buat staff/admin, ubah role)              | Owner                |
 
 ## Konvensi
 

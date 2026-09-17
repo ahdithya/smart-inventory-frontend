@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Docs (panduan lokal, tidak di-commit)
-docs/
-AGENTS.md
