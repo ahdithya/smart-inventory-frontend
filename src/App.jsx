@@ -7,6 +7,7 @@ import { DashboardPage } from './pages/DashboardPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { ProductPage } from './pages/ProductPage';
 import { SalePage } from './pages/SalePage';
+import { StockPage } from './pages/StockPage';
 
 export function App() {
   return (
@@ -55,6 +56,14 @@ export function App() {
             element={
               <ProtectedRoute>
                 <SalePage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/stock"
+            element={
+              <ProtectedRoute>
+                <StockPage />
               </ProtectedRoute>
             }
           />
