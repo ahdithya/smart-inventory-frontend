@@ -13,8 +13,8 @@ import {
 
 const MENU_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', to: '/', icon: LayoutDashboard, isImplemented: true },
-  { id: 'products', label: 'Produk', to: '/products', icon: Package, isImplemented: false },
-  { id: 'categories', label: 'Kategori', to: '/categories', icon: FolderTree, isImplemented: false },
+  { id: 'products', label: 'Produk', to: '/products', icon: Package, isImplemented: true },
+  { id: 'categories', label: 'Kategori', to: '/categories', icon: FolderTree, isImplemented: true },
   { id: 'sales', label: 'Penjualan', to: '/sales', icon: Receipt, isImplemented: false },
   { id: 'stock', label: 'Stok', to: '/stock', icon: Warehouse, isImplemented: false },
   { id: 'forecast', label: 'Prediksi', to: '/forecast', icon: LineChart, isImplemented: false },

@@ -20,7 +20,7 @@ export function Badge({ status = 'aman', children, className = '' }) {
 
   return (
     <span
-      className={`inline-flex items-center justify-center font-semibold text-[11px] tracking-[0.08em] uppercase border px-2 py-0.5 rounded-[4px] select-none ${badgeStyle} ${className}`}
+      className={`inline-flex items-center justify-center w-[74px] h-[22px] font-semibold text-[11px] tracking-[0.08em] uppercase border rounded-[4px] text-center select-none ${badgeStyle} ${className}`}
     >
       {label}
     </span>
