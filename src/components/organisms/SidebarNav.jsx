@@ -17,7 +17,7 @@ const MENU_ITEMS = [
   { id: 'categories', label: 'Kategori', to: '/categories', icon: FolderTree, isImplemented: true },
   { id: 'sales', label: 'Penjualan', to: '/sales', icon: Receipt, isImplemented: true },
   { id: 'stock', label: 'Stok', to: '/stock', icon: Warehouse, isImplemented: true },
-  { id: 'forecast', label: 'Prediksi', to: '/forecast', icon: LineChart, isImplemented: false },
+  { id: 'forecast', label: 'Prediksi', to: '/forecast', icon: LineChart, isImplemented: true },
   { id: 'recommendations', label: 'Rekomendasi', to: '/recommendations', icon: Sparkles, isImplemented: false },
 ];
 
