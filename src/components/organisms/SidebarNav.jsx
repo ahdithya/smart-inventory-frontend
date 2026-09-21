@@ -80,13 +80,19 @@ export function SidebarNav({ className = '' }) {
 
         {/* Bottom Settings Link */}
         <div className="mt-auto pt-4 border-t border-[#eeeeee]">
-          <div
-            className="flex items-center px-5 py-2.5 text-[14px] text-[#9ca3af] cursor-not-allowed border-l-2 border-transparent"
-            title="Pengaturan akan aktif pada tiket berikutnya"
+          <NavLink
+            to="/settings"
+            className={({ isActive }) =>
+              `flex items-center px-5 py-2.5 text-[14px] transition-colors duration-150 ${
+                isActive
+                  ? 'text-[#6d28d9] border-l-2 border-[#6d28d9] bg-[#f4f3f3]/50 font-semibold'
+                  : 'text-[#5f5e5e] hover:text-[#1a1c1c] hover:bg-[#f9f9f9] border-l-2 border-transparent font-medium'
+              }`
+            }
           >
             <Settings className="w-[18px] h-[18px] mr-3 shrink-0 stroke-[1.75]" />
             <span>Pengaturan</span>
-          </div>
+          </NavLink>
         </div>
       </nav>
     </aside>
