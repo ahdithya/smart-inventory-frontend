@@ -9,6 +9,7 @@ import { ProductPage } from './pages/ProductPage';
 import { SalePage } from './pages/SalePage';
 import { StockPage } from './pages/StockPage';
 import { ForecastPage } from './pages/ForecastPage';
+import { RestockPage } from './pages/RestockPage';
 
 export function App() {
   return (
@@ -73,6 +74,14 @@ export function App() {
             element={
               <ProtectedRoute>
                 <ForecastPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/recommendations"
+            element={
+              <ProtectedRoute>
+                <RestockPage />
               </ProtectedRoute>
             }
           />

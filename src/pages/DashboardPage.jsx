@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AppLayout } from '../components/templates/AppLayout';
 import { KpiGrid } from '../components/organisms/KpiGrid';
 import { SalesTrendChart } from '../components/organisms/SalesTrendChart';
@@ -68,13 +69,14 @@ export function DashboardPage() {
     };
   }, [period]);
 
+  const navigate = useNavigate();
+
   const handlePeriodChange = (newPeriod) => {
     setPeriod(newPeriod);
   };
 
   const handleRestockClick = () => {
-    // Navigasi ke modul restock ketika tiket rekomendasi restock diimplementasikan
-    alert('Modul Rekomendasi Restock akan hadir pada tiket selanjutnya (Tiket 24).');
+    navigate('/recommendations');
   };
 
   return (

@@ -18,7 +18,7 @@ const MENU_ITEMS = [
   { id: 'sales', label: 'Penjualan', to: '/sales', icon: Receipt, isImplemented: true },
   { id: 'stock', label: 'Stok', to: '/stock', icon: Warehouse, isImplemented: true },
   { id: 'forecast', label: 'Prediksi', to: '/forecast', icon: LineChart, isImplemented: true },
-  { id: 'recommendations', label: 'Rekomendasi', to: '/recommendations', icon: Sparkles, isImplemented: false },
+  { id: 'recommendations', label: 'Rekomendasi', to: '/recommendations', icon: Sparkles, isImplemented: true },
 ];
 
 export function SidebarNav({ className = '' }) {
